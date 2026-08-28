@@ -782,15 +782,16 @@ var STAGES = {
   // dates : ex. "27 oct. — 31 oct. 2025"
   // horaire : ex. "17h30 – 20h00" (laisser vide = reprend horaire_unique)
   saisons: [
-    { label: "Automne",       annee: "2025", dates: "27 oct. — 31 oct. 2025",   horaire: "" },
-    { label: "Carnaval",      annee: "2026", dates: "16 fév. — 20 fév. 2026",   horaire: "" },
-    { label: "Printemps",     annee: "2026", dates: "4 mai — 8 mai 2026",        horaire: "" },
-    { label: "Reprise Août",  annee: "2026", dates: "17 août — 21 août 2026",    horaire: "" },
+    { label: "Reprise Août",  annee: "2026", dates: "25 - 26 - 28 août 2026",   horaire: "17h30 - 20h00" },
+    { label: "Automne",      annee: "2026", dates: "26 oct. — 30 oct 2026",   horaire: "17h30 - 20h00" },
+    { label: "Noêl",     annee: "2026", dates: "21 déc — 23 déc 2026",        horaire: "10h30 - 20h00" },
+    { label: "Carnaval",  annee: "2027", dates: "1 mars — 5 mars 2026",    horaire: "17h30 - 20h00" },
+    { label: "Printemps",  annee: "2027", dates: "26 avril — 30 avril 2026",    horaire: "17h30 - 20h00" },
     // ➕ Ajoute une saison ici : { label: "Noël", annee: "2025", dates: "22 déc. — 26 déc. 2025", horaire: "" },
     // 🗑️ Supprime une saison : efface la ligne correspondante
   ],
 
-  // -- Tarif affiché en bas --
+  // -- Tarif affiché en bas -- -
   tarif_label: "Tarif par jour",
   tarif_prix: "16 €",
   tarif_sub: "par inscription",
@@ -929,7 +930,7 @@ var EVENEMENTS = [
   },
  {
     type: "stage",
-    jour: "1 au 5", mois: "mars", annee: "2026",
+    jour: "1 au 5", mois: "mars", annee: "2027",
     titre: "Stage Compétition / Carnaval",
     lieu: "Salle Tempogym, Jette",
     horaire: "17h30 - 20h00"
