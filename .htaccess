@@ -1,0 +1,4 @@
+Options -Indexes
+<FilesMatch "^(?:core\.php|catalog\.json|shop-base\.json)$">
+ Require all denied
+</FilesMatch>
