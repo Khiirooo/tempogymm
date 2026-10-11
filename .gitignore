@@ -1,0 +1,12 @@
+# Données personnelles et secrets de l’hébergement : JAMAIS dans Git.
+/tempogym_prive/
+/config.json
+/data.json
+/installation_key.txt
+/CLE_INSTALLATION_PRIVEE.txt
+*.log
+*.bak
+.env
+.env.*
+!.env.example
+.DS_Store
