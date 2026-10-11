@@ -1,4 +1,17 @@
 Options -Indexes
-<FilesMatch "^(?:core\.php|catalog\.json|shop-base\.json)$">
+DirectoryIndex index.php
+RewriteEngine On
+# Pages HTTP vers HTTPS sur le domaine public ; pas de redirection en localhost.
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:[0-9]+)?$ [NC]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+# Évite l'accès direct à la copie HTML sans backend.
+RewriteRule ^index\.html$ / [R=302,L]
+# Route les appels vers le PHP autonome.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^api(?:/.*)?$ api/index.php [L,QSA]
+RewriteRule ^media/[a-f0-9]{36}\.jpg$ api/index.php [L,QSA]
+# Interdit les fichiers de configuration du site.
+<FilesMatch "^(?:index\.html|shop-base\.json|catalog\.json|core\.php)$">
  Require all denied
 </FilesMatch>
