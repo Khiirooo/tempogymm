@@ -1,6 +1,9 @@
 Options -Indexes
 DirectoryIndex index.php
 RewriteEngine On
+# Les outils de recette et les métadonnées Git ne sont pas des pages publiques.
+RewriteRule ^(?:tests|scripts)(?:/|$) - [F,L,NC]
+RewriteRule (^|/)\.(?:git|svn|hg)(?:/|$) - [F,L,NC]
 # Pages HTTP vers HTTPS sur le domaine public ; pas de redirection en localhost.
 RewriteCond %{HTTPS} off
 RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:[0-9]+)?$ [NC]

@@ -55,8 +55,8 @@ var SITE_FACEBOOK  = 'https://www.facebook.com/p/Royal-Tempogym-Jette-1000785029
 // ════════════════════════════════════════════════════════════════════
 
 var HERO_PHOTO_FOND     = ''; // ← URL photo de fond (laisser vide = pas de photo)
-var HERO_PHOTO_GYMNASTE = 'https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/photoDhero.jpg'; // ← grande photo à GAUCHE
-var HERO_PHOTO_DROITE   = 'https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/photoGhero.jpg'; // ← photo diagonale à DROITE (laisser vide = photo par défaut)
+var HERO_PHOTO_GYMNASTE = 'image/photoDhero.jpg'; // ← grande photo à GAUCHE
+var HERO_PHOTO_DROITE   = 'image/photoGhero.jpg'; // ← photo diagonale à DROITE (laisser vide = photo par défaut)
 
 // ── LOGOS PARTENAIRES (sous les boutons du hero) ─────────────────────
 //   label → petit texte au-dessus (laisser vide "" = pas de texte)
@@ -68,8 +68,8 @@ var HERO_PHOTO_DROITE   = 'https://raw.githubusercontent.com/Khiirooo/tempogymm/
 var HERO_PARTENAIRES = {
   label: "En partenariat avec",
   logos: [
-    { nom: "Adeps", logo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/logo/logo%20adeps.png", lien: "https://www.sport-adeps.be/" },
-    { nom: "Jette", logo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/logo/logo%20jette.png", lien: "https://jette.brussels/fr" },
+    { nom: "Adeps", logo: "logo/logo%20adeps.png", lien: "https://www.sport-adeps.be/" },
+    { nom: "Jette", logo: "logo/logo%20jette.png", lien: "https://jette.brussels/fr" },
   ]
 };
 
@@ -93,91 +93,91 @@ var DISCIPLINES = {
   // ── LOISIRS ──────────────────────────────────────────────────────
 
   gaf: {
-    carte_photo:    "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/gaf%20loisir.png",
+    carte_photo:    "image/gaf%20loisir.png",
     carte_position: "center center",
     carte_desc:     "Sol, poutre, barres asymétriques et saut — l'art de la précision et de l'élégance athlétique dans une ambiance familiale.",
     modal_desc:     "La Gymnastique Artistique Féminine est l'une des disciplines les plus complètes qui soient : elle allie force explosive, souplesse extrême, sens artistique et maîtrise technique absolue. Au Royal Tempogym Jette, nos gymnastes évoluent sur quatre agrès — le sol, le saut de cheval, les barres asymétriques et la poutre — dans un environnement bienveillant et exigeant. Que vous visiez la compétition régionale ou simplement le bien-être et l'épanouissement, nos groupes s'adaptent à votre niveau et à votre ambition. La rigueur de l'entraînement forge non seulement le corps, mais aussi la concentration, la persévérance et la confiance en soi.",
     galerie: [
-      { url: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/salle-1-FILEminimizer%20(2).webp", alt: "Poutre de gym" },
-      { url: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/salle-2-FILEminimizer.webp",       alt: "Salle de gym" },
+      { url: "image/salle-1-FILEminimizer%20(2).webp", alt: "Poutre de gym" },
+      { url: "image/salle-2-FILEminimizer.webp",       alt: "Salle de gym" },
     ]
   },
 
   gam: {
-    carte_photo:    "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/racadrer%20gam.png",
+    carte_photo:    "image/racadrer%20gam.png",
     carte_position: "center center",
     carte_desc:     "Force, équilibre, agilité — les agrès masculins développent le corps et l'esprit de compétition.",
     modal_desc:     "La Gymnastique Artistique Masculine est une discipline de force brute et de grâce contrôlée. Au Royal Tempogym Jette, les garçons et hommes s'entraînent sur six agrès emblématiques : le sol, les arçons (cheval-arçons), les anneaux, le saut, les barres parallèles et la barre fixe. Chaque appareil développe des qualités physiques complémentaires — gainage, force maximale, coordination et sens de l'espace. Le GAM forge des athlètes complets, capables de s'exprimer dans la puissance comme dans la précision. L'esprit d'équipe et la discipline personnelle sont au cœur de notre philosophie d'entraînement.",
     galerie: [
-      { url: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/salle-1-FILEminimizer%20(2).webp", alt: "Agrès masculins" },
-      { url: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/salle-2-FILEminimizer.webp",       alt: "Salle de gym" },
+      { url: "image/salle-1-FILEminimizer%20(2).webp", alt: "Agrès masculins" },
+      { url: "image/salle-2-FILEminimizer.webp",       alt: "Salle de gym" },
     ]
   },
 
   parkour: {
-    carte_photo:    "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/parkour.jpeg",
+    carte_photo:    "image/parkour.jpeg",
     carte_position: "center center",
     carte_desc:     "Liberté de mouvement, créativité urbaine et maîtrise du corps dans un cadre sécurisé et encadré.",
     modal_desc:     "Le Parkour est l'art de se déplacer librement dans l'espace en franchissant les obstacles avec fluidité, efficacité et créativité. Né dans les rues urbaines, il trouve ici un cadre sécurisé et encadré par des coaches qualifiés. Au Royal Tempogym Jette, nos sessions alternent apprentissage technique des sauts et réceptions, travail au sol, acrobaties contrôlées et développement du sens spatial. Le Freerun y ajoute une dimension artistique et acrobatique : saltos, rotations, figures impressionnantes — toujours dans le respect de la progressivité et de la sécurité. Une discipline qui développe la confiance en soi, le courage mesuré et la créativité corporelle.",
     galerie: [
-      { url: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/salle-1-FILEminimizer%20(2).webp", alt: "Parkour" },
-      { url: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/salle-2-FILEminimizer.webp",       alt: "Salle parkour" },
+      { url: "image/salle-1-FILEminimizer%20(2).webp", alt: "Parkour" },
+      { url: "image/salle-2-FILEminimizer.webp",       alt: "Salle parkour" },
     ]
   },
 
   baby: {
-    carte_photo:    "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/babygym%20(1)red.jpg",
+    carte_photo:    "image/babygym%20(1)red.jpg",
     carte_position: "center center",
     carte_desc:     "Les premiers pas dans le monde de la gym : équilibre, motricité, confiance — dans la joie et le jeu.",
     modal_desc:     "La Baby-Gym — aussi appelée Mini-Gym pour les plus grands du groupe — est bien plus qu'une initiation à la gymnastique : c'est un programme d'éveil psychomoteur complet pensé pour les tout-petits de 2 ans et demi à 6 ans. À travers des parcours ludiques, des ateliers d'équilibre, de roulade, de saut et de grimpe, les enfants développent leur schéma corporel, leur coordination et leur confiance en leurs capacités motrices — sans même s'en rendre compte, tant le plaisir est au rendez-vous. Les séances sont encadrées dans un environnement 100% sécurisé, avec du matériel spécifiquement adapté aux petits corps. La présence parentale est encouragée pour les tout-petits du groupe Baby 1.",
     galerie: [
-      { url: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/salle-psychomotricit%C3%A9-2.webp", alt: "Enfants baby gym" },
+      { url: "image/salle-psychomotricit%C3%A9-2.webp", alt: "Enfants baby gym" },
     ]
   },
 
   fungym: {
-    carte_photo:    "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/test%20red.png",
+    carte_photo:    "image/test%20red.png",
     carte_position: "center center",
     carte_desc:     "Plaisir, entretien physique et convivialité — un cours adulte mixte décontracté pour bouger sans prise de tête.",
     modal_desc:     "La Fun Gym Adulte, c'est l'antithèse de la compétition : un espace de mouvement libre, de plaisir physique et de convivialité pour adultes et étudiants qui veulent bouger sans prise de tête. Au programme, des exercices de gym adaptés à tous les niveaux — travail au sol, acrobaties progressives, renforcement musculaire et étirements — dans une ambiance décontractée et bienveillante. Pas besoin d'expérience préalable : chacun avance à son rythme, encadré par Coach Marc. Un vrai moment de coupure en milieu de semaine, à partager en bonne compagnie.",
     galerie: [
-      { url: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/salle-1-FILEminimizer%20(2).webp", alt: "Fun Gym adulte" },
-      { url: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/salle-2-FILEminimizer.webp",       alt: "Salle de gym" },
+      { url: "image/salle-1-FILEminimizer%20(2).webp", alt: "Fun Gym adulte" },
+      { url: "image/salle-2-FILEminimizer.webp",       alt: "Salle de gym" },
     ]
   },
 
   // ── COMPÉTITION ──────────────────────────────────────────────────
 
   "compet-gaf": {
-    carte_photo:    "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/gaf_compet_800x600.jpg",
+    carte_photo:    "image/gaf_compet_800x600.jpg",
     carte_position: "center top",
     carte_desc:     "Sol, poutre, barres asymétriques et saut — de Poussines à D2/D3, une filière complète pour viser le haut niveau.",
     modal_desc:     "La section compétition filles du Royal Tempogym Jette regroupe nos gymnastes les plus engagées, de la toute petite Poussine jusqu'aux élites D2/D3. Chaque groupe s'entraîne plusieurs fois par semaine sur les quatre agrès féminins — sol, poutre, barres asymétriques et saut — avec un encadrement individualisé et des objectifs compétitifs clairs dans le calendrier FfG. L'admission se fait sur test préalable. Les stages de vacances sont obligatoires.",
     galerie: [
-      { url: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/salle-1-FILEminimizer%20(2).webp", alt: "Compétition filles" },
-      { url: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/salle-2-FILEminimizer.webp",       alt: "Salle de gym" },
+      { url: "image/salle-1-FILEminimizer%20(2).webp", alt: "Compétition filles" },
+      { url: "image/salle-2-FILEminimizer.webp",       alt: "Salle de gym" },
     ]
   },
 
   "compet-gam": {
-    carte_photo:    "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/gam%20compet.jpg",
+    carte_photo:    "image/gam%20compet.jpg",
     carte_position: "center 30%",
     carte_desc:     "Sol, saut, parallèles, barre fixe, anneaux et arçons — Initiation et Juniors pour forger les athlètes de demain.",
     modal_desc:     "La section compétition garçons forme nos gymnastes masculins sur les six agrès réglementaires : sol, cheval-arçons, anneaux, saut, barres parallèles et barre fixe. Deux groupes structurent la filière — Initiation pour les jeunes entrants et Juniors pour les athlètes confirmés en calendrier FfG. L'entraînement est intensif, plurihebdomadaire, et vise le développement complet de l'athlète. Admission sur test préalable obligatoire.",
     galerie: [
-      { url: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/salle-1-FILEminimizer%20(2).webp", alt: "Compétition garçons" },
-      { url: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/salle-2-FILEminimizer.webp",       alt: "Salle de gym" },
+      { url: "image/salle-1-FILEminimizer%20(2).webp", alt: "Compétition garçons" },
+      { url: "image/salle-2-FILEminimizer.webp",       alt: "Salle de gym" },
     ]
   },
 
   "compet-parkour": {
-    carte_photo:    "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/parkour%20compet.jpeg",
+    carte_photo:    "image/parkour%20compet.jpeg",
     carte_position: "center center",
     carte_desc:     "Figures, vitesse et style — notre équipe compétition représente le club dans les événements FfG et circuits urbains.",
     modal_desc:     "La section compétition Parkour regroupe les traceurs les plus avancés du club, sélectionnés pour représenter le Royal Tempogym Jette dans les événements officiels FfG et les circuits de compétition urbains. Vitesse, style, précision et créativité sont au cœur de la préparation. Les athlètes s'entraînent avec les groupes loisirs avancés le jeudi, avec un travail complémentaire de préparation physique et de chorégraphie de parcours.",
     galerie: [
-      { url: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/salle-1-FILEminimizer%20(2).webp", alt: "Parkour compétition" },
-      { url: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/salle-2-FILEminimizer.webp",       alt: "Salle parkour" },
+      { url: "image/salle-1-FILEminimizer%20(2).webp", alt: "Parkour compétition" },
+      { url: "image/salle-2-FILEminimizer.webp",       alt: "Salle parkour" },
     ]
   },
 
@@ -665,7 +665,7 @@ var INSCRIPTIONS_GROUPES = [
 //    Format (garde le "/" final) :
 //      https://cdn.jsdelivr.net/gh/UTILISATEUR/DEPOT@main/DOSSIER/
 //    Exemple avec ton dépôt :
-//      https://cdn.jsdelivr.net/gh/Khiirooo/tempogymm@main/document/
+//      document/
 //
 // Ensuite, dans chaque document ci-dessous, il suffit de mettre le
 // NOM DU FICHIER (ex: "ROI-Tempogym.pdf"). Le lien complet est
@@ -673,7 +673,7 @@ var INSCRIPTIONS_GROUPES = [
 // commençant par http:// si tu héberges ailleurs.)
 // ════════════════════════════════════════════════════════════════════
 
-var DOCUMENTS_BASE = "https://cdn.jsdelivr.net/gh/Khiirooo/tempogymm@main/document/";
+var DOCUMENTS_BASE = "document/";
 
 
 // ════════════════════════════════════════════════════════════════════
@@ -761,7 +761,7 @@ var BOUTIQUE_PRODUITS = [
     prix: "12 €",
     badge: "Obligatoire",
     badge_style: "rouge",
-    photo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/c11b7d1d20552f1ab4514ffa2c1e1f6f9e32b884/image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2018_58_54.png",
+    photo: "image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2018_58_54.png",
     tailles: ["4 ans","6 ans","8 ans","10 ans","12 ans","S","M","L","XL"]
   },
   {
@@ -773,7 +773,7 @@ var BOUTIQUE_PRODUITS = [
     prix: "75 €",
     badge: "Compétition",
     badge_style: "or",
-    photo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/c11b7d1d20552f1ab4514ffa2c1e1f6f9e32b884/image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2018_56_13.png",
+    photo: "image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2018_56_13.png",
     tailles: ["XXS","XS","S","M","L"]
   },
   {
@@ -784,7 +784,7 @@ var BOUTIQUE_PRODUITS = [
     prix: "65 €",
     badge: "Kit GAM",
     badge_style: "marine",
-    photo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/c11b7d1d20552f1ab4514ffa2c1e1f6f9e32b884/image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2019_03_25.png",
+    photo: "image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2019_03_25.png",
     tailles: ["4 ans","6 ans","8 ans","10 ans","12 ans","S","M"]
   },
   {
@@ -795,7 +795,7 @@ var BOUTIQUE_PRODUITS = [
     prix: "65 €",
     badge: "Officiel",
     badge_style: "or",
-    photo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/ensemblefloating3d.png",
+    photo: "floatingimage/ensemblefloating3d.png",
     tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"]
   },
 ];
@@ -834,10 +834,10 @@ var BOUTIQUE_CATALOGUE = [
     nom: "Vêtements",
     sous_titre: "T-shirt · Training · Short · Legging",
     articles: [
-      { titre: "Legging TempoGym",   sous_titre: "Legging", prix: "<s>20 €</s> 10 €",              photo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/leggingfloating3d.png",    modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"],    badge: "Fin de stock",             badge_style: "rouge",    dispo: true  },
-      { titre: "Short TempoGym",            sous_titre: "Short Noir",              prix: "<s>20 €</s> 10 €",   photo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/shortnoirfloating3D.png",    modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"],    badge: "Fin de stock", badge_style: "rouge",    dispo: true  },
-      { titre: "Short",           sous_titre: "Short Rouge",              prix: "6 €",              photo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/shorttrougefloating3D.png", modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"],  badge: "Fin de stock",             badge_style: "rouge",    dispo: true  },
-      { titre: "Tshirt TempoGym",              sous_titre: "Tshirt Noir",              prix: "<s>12 €</s> 6 €",  photo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/tshirtnoirfloating3D.png",    modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"],    badge: "Fin de stock", badge_style: "rouge",    dispo: true  },
+      { titre: "Legging TempoGym",   sous_titre: "Legging", prix: "<s>20 €</s> 10 €",              photo: "floatingimage/leggingfloating3d.png",    modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"],    badge: "Fin de stock",             badge_style: "rouge",    dispo: true  },
+      { titre: "Short TempoGym",            sous_titre: "Short Noir",              prix: "<s>20 €</s> 10 €",   photo: "floatingimage/shortnoirfloating3D.png",    modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"],    badge: "Fin de stock", badge_style: "rouge",    dispo: true  },
+      { titre: "Short",           sous_titre: "Short Rouge",              prix: "6 €",              photo: "floatingimage/shorttrougefloating3D.png", modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"],  badge: "Fin de stock",             badge_style: "rouge",    dispo: true  },
+      { titre: "Tshirt TempoGym",              sous_titre: "Tshirt Noir",              prix: "<s>12 €</s> 6 €",  photo: "floatingimage/tshirtnoirfloating3D.png",    modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"],    badge: "Fin de stock", badge_style: "rouge",    dispo: true  },
       // ➕ Exemple d'un NOUVEL article, avec sa propre photo et ses propres tailles :
       // { titre: "Coupe-vent Tempogym", sous_titre: "Toutes sections", prix: "35 €", photo: "URL_DE_TA_PHOTO", modal: "", tailles: ["S","M","L","XL"], badge: "Nouveau", badge_style: "or", dispo: true },
     ]
@@ -847,13 +847,13 @@ var BOUTIQUE_CATALOGUE = [
     nom: "Équipement",
     sous_titre: "Tunique · Léotard · Short GAM · Sokol",
     articles: [
-      { titre: "Léotard GAM",        sous_titre: "Garçons · Compétition",    prix: "65 €",              photo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/gamblanc3d%20floating.png", modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"], badge: "Compétition",  badge_style: "or", dispo: true  },
-      { titre: "Léotard GAM",    sous_titre: "Garçons · Compétition",      prix: "<s>65 €</s> 12 €",  photo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/gambleu3d.png", modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"], badge: "Fin de stock", badge_style: "rouge",   dispo: true  },
-      { titre: "Léotard GAM",        sous_titre: "Garçons · Compétition",      prix: "<s>65 €</s> 12 €",  photo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/gambleufloating3d.png", modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"], badge: "Fin de stock", badge_style: "rouge",   dispo: true  },
-      { titre: "Léotard GAM",        sous_titre: "Garçons · Compétition", prix: "<s>30 €</s> 12 €",              photo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/gamrougefloating3D.png",           modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"],         badge: "Fin de stock",             badge_style: "rouge",   dispo: true  },
-      { titre: "Tunique GAF",        sous_titre: "Filles · Compétition",      prix: "<s>65 €</s> 12 €",  photo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/tuniquebleufloating3D.png",           modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"],         badge: "Fin de stock", badge_style: "rouge",   dispo: true  },
-      { titre: "Tunique GAF",          sous_titre: "Filles · Compétition",               prix: "<s>30 €</s> 12 €",               photo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/tuniquemauvefloating3D.png",           modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"],         badge: "Fin de stock",             badge_style: "rouge",   dispo: true  },
-      { titre: "Tunique GAF",          sous_titre: "Filles · Compétition", prix: "<s>65 €</s> 12 €",              photo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/tuniquenoirbleufloating3d.png",           modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"],         badge: "Fin de stock",             badge_style: "rouge",   dispo: true  },
+      { titre: "Léotard GAM",        sous_titre: "Garçons · Compétition",    prix: "65 €",              photo: "floatingimage/gamblanc3d%20floating.png", modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"], badge: "Compétition",  badge_style: "or", dispo: true  },
+      { titre: "Léotard GAM",    sous_titre: "Garçons · Compétition",      prix: "<s>65 €</s> 12 €",  photo: "floatingimage/gambleu3d.png", modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"], badge: "Fin de stock", badge_style: "rouge",   dispo: true  },
+      { titre: "Léotard GAM",        sous_titre: "Garçons · Compétition",      prix: "<s>65 €</s> 12 €",  photo: "floatingimage/gambleufloating3d.png", modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"], badge: "Fin de stock", badge_style: "rouge",   dispo: true  },
+      { titre: "Léotard GAM",        sous_titre: "Garçons · Compétition", prix: "<s>30 €</s> 12 €",              photo: "floatingimage/gamrougefloating3D.png",           modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"],         badge: "Fin de stock",             badge_style: "rouge",   dispo: true  },
+      { titre: "Tunique GAF",        sous_titre: "Filles · Compétition",      prix: "<s>65 €</s> 12 €",  photo: "floatingimage/tuniquebleufloating3D.png",           modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"],         badge: "Fin de stock", badge_style: "rouge",   dispo: true  },
+      { titre: "Tunique GAF",          sous_titre: "Filles · Compétition",               prix: "<s>30 €</s> 12 €",               photo: "floatingimage/tuniquemauvefloating3D.png",           modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"],         badge: "Fin de stock",             badge_style: "rouge",   dispo: true  },
+      { titre: "Tunique GAF",          sous_titre: "Filles · Compétition", prix: "<s>65 €</s> 12 €",              photo: "floatingimage/tuniquenoirbleufloating3d.png",           modal: "",tailles: ["6 ans","8 ans","10 ans","12 ans","S","M","L","XL"],         badge: "Fin de stock",             badge_style: "rouge",   dispo: true  },
     ]
   },
   {
@@ -861,7 +861,7 @@ var BOUTIQUE_CATALOGUE = [
     nom: "Accessoires",
     sous_titre: "Sac",
     articles: [
-      { titre: "Sac Tempogym",       sous_titre: "Taille unique",          prix: "10 €", photo: "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/sacfloating3d.png", modal: "", tailles: [], badge: "", badge_style: "", dispo: true  },
+      { titre: "Sac Tempogym",       sous_titre: "Taille unique",          prix: "10 €", photo: "floatingimage/sacfloating3d.png", modal: "", tailles: [], badge: "", badge_style: "", dispo: true  },
     ]
   },
   // ➕ Pour ajouter une catégorie, copie un bloc { num, nom, sous_titre, articles: [...] }
@@ -1447,13 +1447,13 @@ if (window.TG_isCloud) window.addEventListener('load',window.TG_refreshPublic,{o
      ══════════════════════════════════════════════════════════════════ -->
 <meta property="og:title" content="Royal Tempogym Jette — Club de Gymnastique à Bruxelles">
 <meta property="og:description" content="Gymnastique artistique, parkour, baby-gym et d’autres activités : la passion du mouvement à Jette depuis 1923.">
-<meta property="og:image" content="https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/Logofloating3D.png"> <!-- ← PHOTO_APERCU_LIEN : remplace cette URL -->
+<meta property="og:image" content="floatingimage/Logofloating3D.png"> <!-- ← PHOTO_APERCU_LIEN : remplace cette URL -->
 <meta property="og:url" content="https://tempogym.educsport.be/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Royal Tempogym Jette — Club de Gymnastique à Bruxelles">
 <meta name="twitter:description" content="Gymnastique artistique, parkour, baby-gym et d’autres activités : la passion du mouvement à Jette depuis 1923.">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/Logofloating3D.png"> <!-- ← PHOTO_APERCU_LIEN : remplace cette URL -->
+<meta name="twitter:image" content="floatingimage/Logofloating3D.png"> <!-- ← PHOTO_APERCU_LIEN : remplace cette URL -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
@@ -1461,8 +1461,8 @@ if (window.TG_isCloud) window.addEventListener('load',window.TG_refreshPublic,{o
      téléchargent immédiatement, en parallèle, sans attendre le JavaScript.
      ⚠️ Si tu changes HERO_PHOTO_GYMNASTE / HERO_PHOTO_DROITE dans la config,
         mets aussi ces 2 URLs à jour ici. -->
-<link rel="preload" as="image" href="https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/photoDhero.jpg" fetchpriority="high">
-<link rel="preload" as="image" href="https://raw.githubusercontent.com/Khiirooo/tempogymm/main/image/photoGhero.jpg" media="(min-width: 601px)">
+<link rel="preload" as="image" href="image/photoDhero.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="image/photoGhero.jpg" media="(min-width: 601px)">
 <meta name="theme-color" content="#0A1C3E">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;0,800;0,900;1,900&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -3667,6 +3667,7 @@ body.modal-open { overflow: hidden; }
 
 /* Coach card */
 .coach-card {
+  background: transparent; border: 0; padding: 0; color: inherit; font: inherit; text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4014,7 +4015,6 @@ body.modal-open { overflow: hidden; }
 <!-- NAV -->
 <nav aria-label="Navigation principale">
   <a href="#hero" class="logo-container" aria-label="Royal Tempogym Jette — retour au sommet">
-    <img src="floatingimage/Logofloating3D.png" alt="Logo Royal Tempogym Jette" class="site-logo" onerror="this.style.display='none'">
     <span class="logo-text">Royal <span>Tempogym</span> Jette</span>
   </a>
   <ul>
@@ -4029,7 +4029,7 @@ body.modal-open { overflow: hidden; }
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-right">
-    <a href="#inscriptions" class="nav-cta">Disponibilités</a>
+    <a href="#inscriptions" class="nav-cta">S’inscrire</a>
     <button class="burger-btn" id="burgerBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Ouvrir le menu de navigation">
       <span></span><span></span><span></span>
     </button>
@@ -4047,7 +4047,7 @@ body.modal-open { overflow: hidden; }
   <a href="#horaires" class="mob-link">Horaires</a>
   <a href="#evenements" class="mob-link">Événements</a>
   <a href="#contact" class="mob-link">Contact</a>
-  <a href="#inscriptions" class="mob-cta mob-link">Disponibilités</a>
+  <a href="#inscriptions" class="mob-cta mob-link">S’inscrire</a>
   <div class="mobile-menu-bar">Royal Tempogym Jette · Jette, Bruxelles · Depuis 1923</div>
 </div>
 
@@ -4320,7 +4320,7 @@ body.modal-open { overflow: hidden; }
     <!-- T-SHIRT -->
     <div class="produit-card" role="button" tabindex="0" data-modal="modal-produit-tshirt" aria-label="Voir le T-Shirt Officiel Tempogym">
       <div class="produit-img-wrap">
-        <img src="https://raw.githubusercontent.com/Khiirooo/tempogymm/c11b7d1d20552f1ab4514ffa2c1e1f6f9e32b884/image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2018_58_54.png" alt="T-Shirt officiel Tempogym" class="produit-img" loading="lazy" decoding="async">
+        <img src="image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2018_58_54.png" alt="T-Shirt officiel Tempogym" class="produit-img" loading="lazy" decoding="async">
         <div class="produit-img-overlay">
           <span class="produit-see-btn">Voir le produit <svg viewBox="0 0 16 16"><polyline points="5 2 11 8 5 14"/></svg></span>
         </div>
@@ -4337,7 +4337,7 @@ body.modal-open { overflow: hidden; }
     <!-- TUNIQUE GAF -->
     <div class="produit-card" role="button" tabindex="0" data-modal="modal-produit-justaucorps" aria-label="Voir la Tunique GAF">
       <div class="produit-img-wrap">
-        <img src="https://raw.githubusercontent.com/Khiirooo/tempogymm/c11b7d1d20552f1ab4514ffa2c1e1f6f9e32b884/image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2018_56_13.png" alt="Tunique GAF officielle Tempogym" class="produit-img" loading="lazy" decoding="async">
+        <img src="image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2018_56_13.png" alt="Tunique GAF officielle Tempogym" class="produit-img" loading="lazy" decoding="async">
         <div class="produit-img-overlay">
           <span class="produit-see-btn">Voir le produit <svg viewBox="0 0 16 16"><polyline points="5 2 11 8 5 14"/></svg></span>
         </div>
@@ -4354,7 +4354,7 @@ body.modal-open { overflow: hidden; }
     <!-- KIT GAM -->
     <div class="produit-card" role="button" tabindex="0" data-modal="modal-produit-gam" aria-label="Voir le Kit GAM">
       <div class="produit-img-wrap">
-        <img src="https://raw.githubusercontent.com/Khiirooo/tempogymm/c11b7d1d20552f1ab4514ffa2c1e1f6f9e32b884/image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2019_03_25.png" alt="Kit GAM officiel Tempogym" class="produit-img" loading="lazy" decoding="async">
+        <img src="image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2019_03_25.png" alt="Kit GAM officiel Tempogym" class="produit-img" loading="lazy" decoding="async">
         <div class="produit-img-overlay">
           <span class="produit-see-btn">Voir le produit <svg viewBox="0 0 16 16"><polyline points="5 2 11 8 5 14"/></svg></span>
         </div>
@@ -4371,7 +4371,7 @@ body.modal-open { overflow: hidden; }
     <!-- ENSEMBLE TRAINING -->
     <div class="produit-card" role="button" tabindex="0" data-modal="modal-produit-ensemble" aria-label="Voir l'Ensemble Training Tempogym">
       <div class="produit-img-wrap">
-        <img src="https://raw.githubusercontent.com/Khiirooo/tempogymm/c11b7d1d20552f1ab4514ffa2c1e1f6f9e32b884/image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2019_04_28.png" alt="Ensemble survêtement Tempogym" class="produit-img" loading="lazy" decoding="async">
+        <img src="image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2019_04_28.png" alt="Ensemble survêtement Tempogym" class="produit-img" loading="lazy" decoding="async">
         <div class="produit-img-overlay">
           <span class="produit-see-btn">Voir le produit <svg viewBox="0 0 16 16"><polyline points="5 2 11 8 5 14"/></svg></span>
         </div>
@@ -4828,7 +4828,7 @@ body.modal-open { overflow: hidden; }
     <p class="section-eyebrow" style="color:rgba(255,255,255,.7)" id="rejoignez-eyebrow">Rejoignez-nous</p>
     <h2 class="section-title" id="rejoignez-titre">PRÊT·E À<br>BOUGER ?</h2>
     <p id="inscription-cta-text">Les inscriptions générales 2026–2027 sont clôturées. Certaines sections restent accessibles sur sélection : consultez les disponibilités.</p>
-    <a href="#inscriptions" class="btn-white" id="inscription-cta-btn">Disponibilités</a>
+    <a href="#inscriptions" class="btn-white" id="inscription-cta-btn">S’inscrire</a>
   </div>
 </section>
 
@@ -4988,7 +4988,7 @@ body.modal-open { overflow: hidden; }
         <li><a href="#horaires">Horaires</a></li>
         <li><a href="#stages">Stages</a></li>
         <li><a href="#boutique">Boutique</a></li>
-        <li><a href="#inscriptions">Disponibilités</a></li>
+        <li><a href="#inscriptions">S’inscrire</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div style="margin-top:20px;">
@@ -5197,7 +5197,7 @@ body.modal-open { overflow: hidden; }
     </button>
     <div class="modal-produit-layout">
       <div class="modal-produit-img-panel">
-        <img src="https://raw.githubusercontent.com/Khiirooo/tempogymm/c11b7d1d20552f1ab4514ffa2c1e1f6f9e32b884/image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2018_58_54.png" alt="T-Shirt officiel Tempogym" style="object-fit:contain;background:#0a0a0a;" loading="lazy" decoding="async">
+        <img src="image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2018_58_54.png" alt="T-Shirt officiel Tempogym" style="object-fit:contain;background:#0a0a0a;" loading="lazy" decoding="async">
       </div>
       <div class="modal-produit-content">
         <div>
@@ -5274,7 +5274,7 @@ body.modal-open { overflow: hidden; }
     </button>
     <div class="modal-produit-layout">
       <div class="modal-produit-img-panel">
-        <img src="https://raw.githubusercontent.com/Khiirooo/tempogymm/c11b7d1d20552f1ab4514ffa2c1e1f6f9e32b884/image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2018_56_13.png" alt="Justaucorps GAF Compétition" style="object-fit:contain;background:#0a0a0a;" loading="lazy" decoding="async">
+        <img src="image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2018_56_13.png" alt="Justaucorps GAF Compétition" style="object-fit:contain;background:#0a0a0a;" loading="lazy" decoding="async">
       </div>
       <div class="modal-produit-content">
         <div>
@@ -5350,7 +5350,7 @@ body.modal-open { overflow: hidden; }
     </button>
     <div class="modal-produit-layout">
       <div class="modal-produit-img-panel">
-        <img src="https://raw.githubusercontent.com/Khiirooo/tempogymm/c11b7d1d20552f1ab4514ffa2c1e1f6f9e32b884/image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2019_03_25.png" alt="Kit GAM Compétition" style="object-fit:contain;background:#0a0a0a;" loading="lazy" decoding="async">
+        <img src="image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2019_03_25.png" alt="Kit GAM Compétition" style="object-fit:contain;background:#0a0a0a;" loading="lazy" decoding="async">
       </div>
       <div class="modal-produit-content">
         <div>
@@ -5425,7 +5425,7 @@ body.modal-open { overflow: hidden; }
     </button>
     <div class="modal-produit-layout">
       <div class="modal-produit-img-panel">
-        <img src="https://raw.githubusercontent.com/Khiirooo/tempogymm/c11b7d1d20552f1ab4514ffa2c1e1f6f9e32b884/image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2019_04_28.png" alt="Ensemble officiel Tempogym" loading="lazy" decoding="async">
+        <img src="image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2019_04_28.png" alt="Ensemble officiel Tempogym" loading="lazy" decoding="async">
       </div>
       <div class="modal-produit-content">
         <div>
@@ -5975,9 +5975,13 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
     var tbody = panel.querySelector('tbody');
     if (!tbody) return;
     tbody.innerHTML = cfg.lignes.map(function(l) {
-      var dispoCss = l.complet ? 'style="color:#E8332A;font-weight:700;"' : (l.dispo === '✓ Ouvert' ? 'style="color:#27ae60;font-weight:600;"' : (l.dispo === 'Quelques places' ? 'style="color:#F5A623;font-weight:600;"' : ''));
-      var rowCss = (l.complet || l.selection) ? ' class="tarif-full"' : '';
-      return '<tr' + rowCss + '><td><strong>' + l.groupe + '</strong></td><td>' + l.age + '</td><td>' + l.horaires + '</td><td class="tarif-price">' + l.prix + '</td><td ' + dispoCss + '>' + (l.complet ? '🔴 Complet' : l.dispo) + '</td></tr>';
+      var inscriptionsCloses = typeof INSCRIPTIONS_OUVERTES !== 'undefined' && !INSCRIPTIONS_OUVERTES
+        && ['baby','gaf','gam-loisirs','parkour'].indexOf(panelId) !== -1 && !l.selection;
+      var ferme = l.complet || inscriptionsCloses;
+      var disponibilite = l.complet ? '🔴 Complet' : (inscriptionsCloses ? 'Inscriptions clôturées' : l.dispo);
+      var dispoCss = ferme ? 'style="color:#E8332A;font-weight:700;"' : (l.dispo === '✓ Ouvert' ? 'style="color:#27ae60;font-weight:600;"' : (l.dispo === 'Quelques places' ? 'style="color:#F5A623;font-weight:600;"' : ''));
+      var rowCss = (ferme || l.selection) ? ' class="tarif-full"' : '';
+      return '<tr' + rowCss + '><td><strong>' + l.groupe + '</strong></td><td>' + l.age + '</td><td>' + l.horaires + '</td><td class="tarif-price">' + l.prix + '</td><td ' + dispoCss + '>' + disponibilite + '</td></tr>';
     }).join('');
     // Note de bas de tableau
     var note = panel.querySelector('.tarif-note');
@@ -6834,220 +6838,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 
 </script>
 
-<script>
-// ===========================
-// CAROUSEL ENTRAÎNEURS — banderole infinie + drag/swipe
-// Auto-scroll RAF · pause hover/focus · drag souris · swipe touch
-// ===========================
-(function() {
-  var track    = document.getElementById('coaches-track');
-  var carousel = document.getElementById('coachesCarousel');
-  var modalsContainer = document.getElementById('coaches-modals');
-  if (!track || !carousel) return;
-
-  // ── 1. Génère les cartes ─────────────────────────────
-  function buildCard(c, interactive) {
-    var avatarHtml = c.photo
-      ? '<img src="' + c.photo + '" alt="' + c.nom + '" class="coach-avatar" loading="lazy" decoding="async">'
-      : '<div class="coach-avatar-initials">' + (c.initiale || c.nom[0]) + '</div>';
-    var groupes = Array.isArray(c.groupes) ? c.groupes.join(' · ') : (c.groupes || '');
-    return '<div class="coach-card" data-coach="' + c.id
-      + '" role="button" tabindex="' + (interactive ? '0' : '-1')
-      + '" aria-hidden="' + (interactive ? 'false' : 'true')
-      + '" aria-label="' + (interactive ? 'Voir le profil de ' + c.nom : '') + '">'
-      + '<div class="coach-avatar-wrap">' + avatarHtml + '</div>'
-      + '<div class="coach-name">' + c.nom + '</div>'
-      + '<div class="coach-group-tag">' + groupes + '</div>'
-      + '</div>';
-  }
-
-  if (window.ENTRAINEURS && ENTRAINEURS.length) {
-    var setHtml   = ENTRAINEURS.map(function(c){ return buildCard(c, true);  }).join('');
-    var cloneHtml = ENTRAINEURS.map(function(c){ return buildCard(c, false); }).join('');
-    track.innerHTML = setHtml + cloneHtml;
-  }
-
-  // ── 2. Génère les modales ────────────────────────────
-  if (modalsContainer && window.ENTRAINEURS) {
-    modalsContainer.innerHTML = ENTRAINEURS.map(function(c) {
-      var avatarHtml = c.photo
-        ? '<img src="' + c.photo + '" alt="' + c.nom + '" class="coach-modal-avatar" loading="lazy" decoding="async">'
-        : '<div class="coach-modal-avatar-initials">' + (c.initiale || c.nom[0]) + '</div>';
-      var groupTags = Array.isArray(c.groupes)
-        ? c.groupes.map(function(g){ return '<span class="coach-modal-group-tag">' + g + '</span>'; }).join('')
-        : '<span class="coach-modal-group-tag">' + (c.groupes || '') + '</span>';
-      return '<div id="modal-coach-' + c.id + '" class="modal-overlay modal-coach-full" role="dialog" aria-modal="true">'
-        + '<div class="modal-box" style="max-width:520px;">'
-        + '<button class="modal-close" aria-label="Fermer"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>'
-        + '<div class="modal-header">'
-        + avatarHtml
-        + '<p class="modal-eyebrow" style="color:var(--tg-red);">' + c.role + '</p>'
-        + '<h2 class="modal-title">' + c.nom + '</h2>'
-        + '</div>'
-        + '<div class="modal-body">'
-        + (c.bio ? '<p class="modal-desc">' + c.bio + '</p>' : '<p class="modal-desc" style="opacity:.5;font-style:italic;">Biographie à venir.</p>')
-        + '<div class="coach-modal-meta"><div class="coach-modal-meta-item">'
-        + '<span class="coach-modal-meta-label">Depuis</span>'
-        + '<span class="coach-modal-meta-value">' + (c.depuis || '—') + '</span>'
-        + '</div></div>'
-        + '<div class="coach-modal-groups">' + groupTags + '</div>'
-        + '</div></div></div>';
-    }).join('');
-
-    modalsContainer.querySelectorAll('.modal-close').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var m = btn.closest('.modal-overlay');
-        if (m) { m.classList.remove('active'); document.body.style.overflow = ''; }
-      });
-    });
-    modalsContainer.querySelectorAll('.modal-overlay').forEach(function(m) {
-      m.addEventListener('click', function(e) {
-        if (e.target === m) { m.classList.remove('active'); document.body.style.overflow = ''; }
-      });
-    });
-  }
-
-  // ── 3. Moteur RAF auto-scroll ────────────────────────
-  var speed        = 0.6;  // px/frame — augmenter = plus rapide
-  var pos          = 0;
-  var halfWidth    = 0;
-  var rafId        = null;
-  var autoRunning  = true;
-  var pauseReasons = {};
-
-  function pause(reason) {
-    pauseReasons[reason] = true;
-    if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
-    autoRunning = false;
-  }
-
-  function resume(reason) {
-    delete pauseReasons[reason];
-    if (Object.keys(pauseReasons).length === 0 && !autoRunning) {
-      autoRunning = true;
-      rafId = requestAnimationFrame(autoTick);
-    }
-  }
-
-  function autoTick() {
-    if (!autoRunning) return;
-    halfWidth = track.scrollWidth / 2;
-    pos -= speed;
-    if (pos <= -halfWidth) pos += halfWidth;
-    track.style.transform = 'translateX(' + pos + 'px)';
-    rafId = requestAnimationFrame(autoTick);
-  }
-
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    pause('reduced-motion');
-  } else {
-    requestAnimationFrame(function() {
-      halfWidth = track.scrollWidth / 2;
-      rafId = requestAnimationFrame(autoTick);
-    });
-  }
-
-  // ── 4. Pause hover ───────────────────────────────────
-  carousel.addEventListener('mouseenter', function() { pause('hover'); });
-  carousel.addEventListener('mouseleave', function() { resume('hover'); });
-
-  // ── 5. Pause focus clavier ───────────────────────────
-  carousel.addEventListener('focusin',  function() { pause('focus'); });
-  carousel.addEventListener('focusout', function() { resume('focus'); });
-
-  // ── 6. Drag souris ───────────────────────────────────
-  var isDragging   = false;
-  var dragStartX   = 0;
-  var dragStartPos = 0;
-  var hasDragged   = false;
-  var resumeTimer  = null;
-
-  carousel.addEventListener('mousedown', function(e) {
-    if (e.button !== 0) return;
-    isDragging   = true;
-    hasDragged   = false;
-    dragStartX   = e.pageX;
-    dragStartPos = pos;
-    pause('drag');
-    carousel.classList.add('is-dragging');
-    e.preventDefault();
-  });
-
-  document.addEventListener('mousemove', function(e) {
-    if (!isDragging) return;
-    var diff = e.pageX - dragStartX;
-    if (Math.abs(diff) > 5) hasDragged = true;
-    halfWidth = track.scrollWidth / 2;
-    pos = (dragStartPos + diff) % halfWidth;
-    if (pos > 0) pos -= halfWidth;
-    track.style.transform = 'translateX(' + pos + 'px)';
-  });
-
-  document.addEventListener('mouseup', function() {
-    if (!isDragging) return;
-    isDragging = false;
-    carousel.classList.remove('is-dragging');
-    clearTimeout(resumeTimer);
-    resumeTimer = setTimeout(function() { resume('drag'); }, 800);
-  });
-
-  // ── 7. Swipe touch ───────────────────────────────────
-  var touchStartX   = 0;
-  var touchStartPos = 0;
-  var touchMoved    = false;
-
-  carousel.addEventListener('touchstart', function(e) {
-    touchStartX   = e.touches[0].clientX;
-    touchStartPos = pos;
-    touchMoved    = false;
-    pause('touch');
-    clearTimeout(resumeTimer);
-  }, { passive: true });
-
-  carousel.addEventListener('touchmove', function(e) {
-    var diff = e.touches[0].clientX - touchStartX;
-    if (Math.abs(diff) > 8) touchMoved = true;
-    halfWidth = track.scrollWidth / 2;
-    pos = (touchStartPos + diff) % halfWidth;
-    if (pos > 0) pos -= halfWidth;
-    track.style.transform = 'translateX(' + pos + 'px)';
-  }, { passive: true });
-
-  carousel.addEventListener('touchend', function() {
-    clearTimeout(resumeTimer);
-    resumeTimer = setTimeout(function() { resume('touch'); }, 1200);
-  }, { passive: true });
-
-  // ── 8. Clic / Tap → modal ────────────────────────────
-  function openModal(id) {
-    var modal = document.getElementById('modal-coach-' + id);
-    if (!modal) return;
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-
-  carousel.addEventListener('click', function(e) {
-    if (hasDragged) return;
-    var card = e.target.closest('.coach-card');
-    if (card) openModal(card.dataset.coach);
-  });
-
-  carousel.addEventListener('touchend', function(e) {
-    if (touchMoved) return;
-    var card = e.target.closest('.coach-card');
-    if (card) openModal(card.dataset.coach);
-  }, { passive: true });
-
-  carousel.addEventListener('keydown', function(e) {
-    if (e.key !== 'Enter' && e.key !== ' ') return;
-    var card = e.target.closest('.coach-card');
-    if (!card) return;
-    e.preventDefault();
-    openModal(card.dataset.coach);
-  });
-
-})();
-</script>
+<script src="assets/coach-carousel.js" defer></script>
 <!-- ═══════════════════════════════════════════════════
      MINI MODALES ACCORDÉON BOUTIQUE
 ════════════════════════════════════════════════════ -->
@@ -7494,7 +7285,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
  let mem={};
  const get=(key,def)=>{try{return JSON.parse(localStorage.getItem('tg_demo_v5_'+key))??def}catch{return mem[key]??def}};
  const put=(key,val)=>{mem[key]=val;try{localStorage.setItem('tg_demo_v5_'+key,JSON.stringify(val));}catch(e){console.warn('Stockage local indisponible ou plein',e)}};
- const legal={identity:'Royal TempoGym Jette',legalAddress:'',enterpriseNumber:'',vat:'',responsible:'',email:'tempogymjette@hotmail.com',phone:'0473/17.34.14',host:'',privacyContact:'tempogymjette@hotmail.com',retentionMonths:12,delivery:'Retrait au club — simulation',payment:'Aucun paiement (démo).',withdrawal:'À préciser',terms:'Aucune commande réelle sur cette démonstration.'};
+ const legal={identity:'ROYAL TEMPOGYM JETTE ASBL',legalAddress:'Avenue du Comté de Jette 3, 1090 Jette, Belgique',enterpriseNumber:'0899.464.172',vat:'',responsible:'Le comité de ROYAL TEMPOGYM JETTE ASBL',email:'tempogymjette@hotmail.com',phone:'0473/17.34.14',host:'OVHcloud — hébergement du club',privacyContact:'tempogymjette@hotmail.com',retentionMonths:12,delivery:'Retrait au club — simulation',payment:'Aucun paiement (démo).',withdrawal:'À préciser',terms:'Aucune commande réelle sur cette démonstration.'};
  const now=()=>new Date().toISOString();
  window.TGDemoAPI=async function(route,method='GET',data=null){
   const orders=get('orders',[]),stocks=get('stocks',{}),coaches=get('coaches',[]);
@@ -8337,7 +8128,7 @@ body.tg-server-mode #tg-admin .tg-field:has(#tg-email){display:none}
  const E=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const mode=()=>!!window.TG_PASSWORD_MODE||!!window.TG_DEMO_MODE;
  async function api(url,method='GET',data){if(window.TG_DEMO_MODE)return window.TGDemoAPI(url,method,data);const r=await fetch(url,{method,credentials:'same-origin',headers:{'X-TG-Request':'v4',...(data!==undefined?{'Content-Type':'application/json'}:{})},...(data!==undefined?{body:JSON.stringify(data)}:{})});const d=await r.json().catch(()=>null);if(!r.ok)throw Error(d?.error||'Erreur serveur '+r.status);return d;}
- const legalDefault={identity:'Royal TempoGym Jette',legalAddress:'',enterpriseNumber:'',vat:'',responsible:'',email:'tempogymjette@hotmail.com',phone:'0473/17.34.14',host:'',privacyContact:'tempogymjette@hotmail.com',retentionMonths:12,delivery:'Retrait au club (à confirmer)',payment:'Paiement après confirmation par le secrétariat.',withdrawal:'À confirmer selon les règles applicables.',terms:'Les commandes envoyées constituent des demandes, sous réserve de validation et de stock.'};
+ const legalDefault={identity:'ROYAL TEMPOGYM JETTE ASBL',legalAddress:'Avenue du Comté de Jette 3, 1090 Jette, Belgique',enterpriseNumber:'0899.464.172',vat:'',responsible:'Le comité de ROYAL TEMPOGYM JETTE ASBL',email:'tempogymjette@hotmail.com',phone:'0473/17.34.14',host:'OVHcloud — hébergement du club',privacyContact:'tempogymjette@hotmail.com',retentionMonths:12,delivery:'Retrait au club (à confirmer)',payment:'Paiement après confirmation par le secrétariat.',withdrawal:'À confirmer selon les règles applicables.',terms:'Les commandes envoyées constituent des demandes, sous réserve de validation et de stock.'};
  let legal=legalDefault,legalTab='privacy',lastFocus=null;
  const frame=document.getElementById('tg-legal-dialog'),ct=document.getElementById('tg-legal-content');
  const val=(key)=>E(legal[key]||'À compléter avant publication');
@@ -8380,14 +8171,15 @@ body.tg-server-mode #tg-admin .tg-field:has(#tg-email){display:none}
    const b=e.target.closest('[data-tgv4-order]');if(!b)return;
    e.preventDefault();e.stopImmediatePropagation();
    const {sku,mod}=itemForModal(b);if(!sku||!mod)return;
-   const p=mod.querySelector('.taille-chip.selected');const size=p?.dataset.taille||p?.textContent?.trim()||'Taille unique';
+   const p=mod.querySelector('.taille-chip.selected');const product=products.find(x=>x.sku===sku);
+   const size=p?.dataset.taille||p?.textContent?.trim()||(product?.sizes?.length===1?product.sizes[0]:'');
    const first=mod.querySelector('.mm-prenom,#cat-modal-prenom,input[id^="prenom-"]')?.value?.trim()||'';
    const last=mod.querySelector('.mm-nom,#cat-modal-nom,input[id^="nom-"]')?.value?.trim()||'';
    const group=mod.querySelector('.mm-groupe,#groupe-catalogue,input[id^="groupe-"]')?.value?.trim()||'';
    const email=mod.querySelector('.tgv4-email')?.value.trim()||'';
    const privacyAccepted=!!mod.querySelector('.tgv4-privacy')?.checked;
    const message=mod.querySelector('.tgv4-feedback');
-   if(!p||!first||!last||!group||!/^\S+@\S+\.\S+$/.test(email)||!privacyAccepted){message.textContent='Sélectionne une taille, complète les noms, le groupe, ton e-mail et confirme avoir lu la confidentialité.';return;}
+   if(!size||!first||!last||!group||!/^\S+@\S+\.\S+$/.test(email)||!privacyAccepted){message.textContent='Sélectionne une taille, complète les noms, le groupe, ton e-mail et confirme avoir lu la confidentialité.';return;}
    b.setAttribute('aria-disabled','true');b.style.pointerEvents='none';message.textContent='Enregistrement en cours…';
    try{const result=await api('/api/orders','POST',{sku,size,first,last,group,email,privacyAccepted});message.innerHTML=`<div class="tgv4-order-notice">${window.TG_DEMO_MODE?'Commande fictive (démo) enregistrée uniquement sur cet ordinateur :':'Demande enregistrée :'} <strong>${E(result.reference)}</strong>. Conserve ce numéro. Le secrétariat doit encore confirmer la disponibilité et les modalités de paiement. Aucun paiement n’a été effectué.</div>`;}
    catch(err){message.textContent='Demande non enregistrée : '+err.message;}finally{b.removeAttribute('aria-disabled');b.style.pointerEvents='';}

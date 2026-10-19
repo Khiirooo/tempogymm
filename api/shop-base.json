@@ -8,7 +8,7 @@
       "prix": "12 €",
       "badge": "Obligatoire",
       "badge_style": "rouge",
-      "photo": "https://raw.githubusercontent.com/Khiirooo/tempogymm/c11b7d1d20552f1ab4514ffa2c1e1f6f9e32b884/image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2018_58_54.png",
+      "photo": "image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2018_58_54.png",
       "tailles": [
         "4 ans",
         "6 ans",
@@ -33,7 +33,7 @@
       "prix": "75 €",
       "badge": "Compétition",
       "badge_style": "or",
-      "photo": "https://raw.githubusercontent.com/Khiirooo/tempogymm/c11b7d1d20552f1ab4514ffa2c1e1f6f9e32b884/image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2018_56_13.png",
+      "photo": "image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2018_56_13.png",
       "tailles": [
         "XXS",
         "XS",
@@ -50,7 +50,7 @@
       "prix": "65 €",
       "badge": "Kit GAM",
       "badge_style": "marine",
-      "photo": "https://raw.githubusercontent.com/Khiirooo/tempogymm/c11b7d1d20552f1ab4514ffa2c1e1f6f9e32b884/image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2019_03_25.png",
+      "photo": "image/ChatGPT%20Image%2029%20ao%C3%BBt%202026%2C%2019_03_25.png",
       "tailles": [
         "4 ans",
         "6 ans",
@@ -69,7 +69,7 @@
       "prix": "65 €",
       "badge": "Officiel",
       "badge_style": "or",
-      "photo": "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/ensemblefloating3d.png",
+      "photo": "floatingimage/ensemblefloating3d.png",
       "tailles": [
         "6 ans",
         "8 ans",
@@ -92,7 +92,7 @@
           "titre": "Legging TempoGym",
           "sous_titre": "Legging",
           "prix": "<s>20 €</s> 10 €",
-          "photo": "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/leggingfloating3d.png",
+          "photo": "floatingimage/leggingfloating3d.png",
           "modal": "",
           "tailles": [
             "6 ans",
@@ -112,7 +112,7 @@
           "titre": "Short TempoGym",
           "sous_titre": "Short Noir",
           "prix": "<s>20 €</s> 10 €",
-          "photo": "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/shortnoirfloating3D.png",
+          "photo": "floatingimage/shortnoirfloating3D.png",
           "modal": "",
           "tailles": [
             "6 ans",
@@ -132,7 +132,7 @@
           "titre": "Short",
           "sous_titre": "Short Rouge",
           "prix": "6 €",
-          "photo": "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/shorttrougefloating3D.png",
+          "photo": "floatingimage/shorttrougefloating3D.png",
           "modal": "",
           "tailles": [
             "6 ans",
@@ -152,7 +152,7 @@
           "titre": "Tshirt TempoGym",
           "sous_titre": "Tshirt Noir",
           "prix": "<s>12 €</s> 6 €",
-          "photo": "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/tshirtnoirfloating3D.png",
+          "photo": "floatingimage/tshirtnoirfloating3D.png",
           "modal": "",
           "tailles": [
             "6 ans",
@@ -179,7 +179,7 @@
           "titre": "Léotard GAM",
           "sous_titre": "Garçons · Compétition",
           "prix": "65 €",
-          "photo": "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/gamblanc3d%20floating.png",
+          "photo": "floatingimage/gamblanc3d%20floating.png",
           "modal": "",
           "tailles": [
             "6 ans",
@@ -199,7 +199,7 @@
           "titre": "Léotard GAM",
           "sous_titre": "Garçons · Compétition",
           "prix": "<s>65 €</s> 12 €",
-          "photo": "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/gambleu3d.png",
+          "photo": "floatingimage/gambleu3d.png",
           "modal": "",
           "tailles": [
             "6 ans",
@@ -219,7 +219,7 @@
           "titre": "Léotard GAM",
           "sous_titre": "Garçons · Compétition",
           "prix": "<s>65 €</s> 12 €",
-          "photo": "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/gambleufloating3d.png",
+          "photo": "floatingimage/gambleufloating3d.png",
           "modal": "",
           "tailles": [
             "6 ans",
@@ -239,7 +239,7 @@
           "titre": "Léotard GAM",
           "sous_titre": "Garçons · Compétition",
           "prix": "<s>30 €</s> 12 €",
-          "photo": "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/gamrougefloating3D.png",
+          "photo": "floatingimage/gamrougefloating3D.png",
           "modal": "",
           "tailles": [
             "6 ans",
@@ -259,7 +259,7 @@
           "titre": "Tunique GAF",
           "sous_titre": "Filles · Compétition",
           "prix": "<s>65 €</s> 12 €",
-          "photo": "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/tuniquebleufloating3D.png",
+          "photo": "floatingimage/tuniquebleufloating3D.png",
           "modal": "",
           "tailles": [
             "6 ans",
@@ -279,7 +279,7 @@
           "titre": "Tunique GAF",
           "sous_titre": "Filles · Compétition",
           "prix": "<s>30 €</s> 12 €",
-          "photo": "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/tuniquemauvefloating3D.png",
+          "photo": "floatingimage/tuniquemauvefloating3D.png",
           "modal": "",
           "tailles": [
             "6 ans",
@@ -299,7 +299,7 @@
           "titre": "Tunique GAF",
           "sous_titre": "Filles · Compétition",
           "prix": "<s>65 €</s> 12 €",
-          "photo": "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/tuniquenoirbleufloating3d.png",
+          "photo": "floatingimage/tuniquenoirbleufloating3d.png",
           "modal": "",
           "tailles": [
             "6 ans",
@@ -326,7 +326,7 @@
           "titre": "Sac Tempogym",
           "sous_titre": "Taille unique",
           "prix": "10 €",
-          "photo": "https://raw.githubusercontent.com/Khiirooo/tempogymm/main/floatingimage/sacfloating3d.png",
+          "photo": "floatingimage/sacfloating3d.png",
           "modal": "",
           "tailles": [],
           "badge": "",

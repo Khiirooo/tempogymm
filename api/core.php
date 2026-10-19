@@ -3,7 +3,15 @@
 declare(strict_types=1);
 const TG_ALLOWED = ['PAGE_ACCUEIL','HERO_PHOTO_FOND','HERO_PHOTO_GYMNASTE','HERO_PHOTO_DROITE','HERO_PARTENAIRES','REJOIGNEZ_NOUS','SITE_INSTAGRAM','SITE_FACEBOOK','DISCIPLINES','DISCIPLINES_BADGES','ENTRAINEURS','INSCRIPTIONS_OUVERTES','INSCRIPTIONS_OPEN_LEAD','INSCRIPTIONS_OPEN_URL','INSCRIPTIONS_OPEN_SAISON','INSCRIPTIONS_OPEN_ETAPES','INSCRIPTIONS_MSG','INSCRIPTIONS_NOTE','INSCRIPTIONS_ALERTE','INSCRIPTIONS_GROUPES','INSCRIPTIONS_MODALITES','BOUTIQUE_PRODUITS','BOUTIQUE_CATALOGUE','BOUTIQUE_GROUPES','STAGES','TARIFS','HORAIRES_SEMAINE','EVENEMENTS','CONTACT_INFOS','FOOTER','DOCUMENTS_BASE'];
 const TG_STATUSES = ['Nouvelle','En préparation','Prête','Remise','Annulée'];
-function tg_private_dir():string { return dirname(__DIR__, 2).'/tempogym_prive'; }
+function tg_private_dir():string {
+    $dir=getenv('TG_PRIVATE_DIR') ?: dirname(__DIR__, 2).'/tempogym_prive';
+    if(!str_starts_with($dir,'/') || str_contains($dir,"\0"))throw new RuntimeException('Le stockage privé doit avoir un chemin absolu.');
+    $parent=realpath(dirname($dir));$public=realpath(dirname(__DIR__));
+    if(!$parent)throw new RuntimeException('Le dossier parent du stockage privé est introuvable.');
+    $resolved=$parent.'/'.basename($dir);
+    if($resolved===$public || str_starts_with($resolved,$public.'/'))throw new RuntimeException('Le stockage privé doit rester hors du dossier public.');
+    return $resolved;
+}
 function tg_init_dir():void {
     $dir=tg_private_dir();
     if (!is_dir($dir) && !@mkdir($dir, 0700, true) && !is_dir($dir)) throw new RuntimeException('Dossier privé non inscriptible. Vérifie les droits FTP sur le dossier parent de www.');
@@ -12,7 +20,7 @@ function tg_init_dir():void {
     if (!file_exists($dir.'/.htaccess')) @file_put_contents($dir.'/.htaccess',"Require all denied\nDeny from all\n");
 }
 function tg_config():?array { $p=tg_private_dir().'/config.json'; if (!is_file($p)) return null; $r=json_decode((string)file_get_contents($p),true); return is_array($r)?$r:null; }
-function tg_default_legal():array { return ['identity'=>'Royal TempoGym Jette','legalAddress'=>'','enterpriseNumber'=>'','vat'=>'','responsible'=>'','email'=>'tempogymjette@hotmail.com','phone'=>'0473/17.34.14','host'=>'','privacyContact'=>'tempogymjette@hotmail.com','retentionMonths'=>12,'delivery'=>'Retrait au club lors des permanences, sous réserve de confirmation.','payment'=>'Modalités précisées par le secrétariat au moment de la confirmation de commande.','withdrawal'=>'À préciser avec le club selon les règles applicables au type de vente.','terms'=>'Les commandes enregistrées sont des demandes soumises à validation et à la disponibilité des articles.']; }
+function tg_default_legal():array { return ['identity'=>'ROYAL TEMPOGYM JETTE ASBL','legalAddress'=>'Avenue du Comté de Jette 3, 1090 Jette, Belgique','enterpriseNumber'=>'0899.464.172','vat'=>'','responsible'=>'Le comité de ROYAL TEMPOGYM JETTE ASBL','email'=>'tempogymjette@hotmail.com','phone'=>'0473/17.34.14','host'=>'OVHcloud — hébergement du club','privacyContact'=>'tempogymjette@hotmail.com','retentionMonths'=>12,'delivery'=>'Retrait au club lors des permanences, sous réserve de confirmation.','payment'=>'Modalités précisées par le secrétariat au moment de la confirmation de commande.','withdrawal'=>'À préciser avec le club selon les règles applicables au type de vente.','terms'=>'Les commandes enregistrées sont des demandes soumises à validation et à la disponibilité des articles.']; }
 function tg_fresh_db():array { return ['site'=>null,'history'=>[],'orders'=>[],'stocks'=>[],'coaches'=>[],'legal'=>tg_default_legal(),'developmentEnabled'=>true]; }
 /** Écrit sous verrou exclusif, évite la perte de commandes simultanées. */
 function tg_db(callable $fn,bool $write=false):mixed {
