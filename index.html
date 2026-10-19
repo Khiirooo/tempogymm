@@ -904,11 +904,11 @@ var BOUTIQUE_GROUPES = [
 var STAGES = {
 
   // -- Texte d'intro en haut de la section --
-  intro: "Des stages de Gymnastique sont organisés à chaque vacance scolaire. Consultez les ités selon votre groupe.",
+  intro: "Des stages de Gymnastique sont organisés à chaque vacance scolaire. Consultez les dates selon votre groupe.",
 
   // -- Titre du calendrier --
   calendrier_titre: "Stages en Soirée · Groupes Compétition",
-  calendrier_saison: "Calendrier 2025–2026",
+  calendrier_saison: "Calendrier 2026–2027",
 
   // -- Horaire unique affiché sous le titre calendrier --
   horaire_unique: "17h30 – 20h00",
@@ -918,11 +918,12 @@ var STAGES = {
   // annee : année affichée en petit
   // dates : ex. "27 oct. — 31 oct. 2025"
   // horaire : ex. "17h30 – 20h00" (laisser vide = reprend horaire_unique)
+  // date_fin : AAAA-MM-JJ, stage visible jusqu’à ce jour inclus
   saisons: [
-    { label: "Automne",      annee: "2026", dates: "26 oct. — 30 oct 2026",   horaire: "17h30 - 20h00" },
-    { label: "Noêl",     annee: "2026", dates: "21 déc — 23 déc 2026",        horaire: "10h30 - 20h00" },
-    { label: "Carnaval",  annee: "2027", dates: "1 mars — 5 mars 2026",    horaire: "17h30 - 20h00" },
-    { label: "Printemps",  annee: "2027", dates: "26 avril — 30 avril 2026",    horaire: "17h30 - 20h00" },
+    { label: "Automne",   annee: "2026", dates: "26 oct. — 30 oct. 2026", horaire: "17h30 - 20h00", date_fin: "2026-10-30" },
+    { label: "Noël",      annee: "2026", dates: "21 déc. — 23 déc. 2026", horaire: "10h30 - 20h00", date_fin: "2026-12-23" },
+    { label: "Carnaval",  annee: "2027", dates: "1 mars — 5 mars 2027",    horaire: "17h30 - 20h00", date_fin: "2027-03-05" },
+    { label: "Printemps", annee: "2027", dates: "26 avril — 30 avril 2027",horaire: "17h30 - 20h00", date_fin: "2027-04-30" },
     // ➕ Ajoute une saison ici : { label: "Noël", annee: "2025", dates: "22 déc. — 26 déc. 2025", horaire: "" },
     // 🗑️ Supprime une saison : efface la ligne correspondante
   ],
@@ -1034,105 +1035,120 @@ var EVENEMENTS = [
     jour: "1", mois: "Septembre", annee: "2026",
     titre: "Rentrée Sportive",
     lieu: "Salle Tempogym, Jette",
-    horaire: "/"
+    horaire: "/",
+    date_fin: "2026-09-01"
   },
  {
     type: "stage",
     jour: "17", mois: "août", annee: "2026",
     titre: "Stage Butgenbach - COMPLET",
     lieu: "Butgenbach",
-    horaire: "17 août 2026 - 21 août 2026"
+    horaire: "17 août 2026 - 21 août 2026",
+    date_fin: "2026-08-21"
   },
  {
     type: "stage",
     jour: "25 / 26 / 28", mois: "août", annee: "2026",
     titre: "Stage Compétition / Reprise",
     lieu: "Salle Tempogym, Jette",
-    horaire: "17h30 - 20h00"
+    horaire: "17h30 - 20h00",
+    date_fin: "2026-08-28"
   },
  {
     type: "stage",
     jour: "26 au 30", mois: "octobre", annee: "2026",
     titre: "Stage Compétition / Automne",
     lieu: "Salle Tempogym, Jette",
-    horaire: "17h30 - 20h00"
+    horaire: "17h30 - 20h00",
+    date_fin: "2026-10-30"
   },
  {
     type: "stage",
     jour: "21 au 23", mois: "décembre", annee: "2026",
     titre: "Stage Compétition / Noël",
     lieu: "Salle Tempogym, Jette",
-    horaire: "17h30 - 20h00"
+    horaire: "17h30 - 20h00",
+    date_fin: "2026-12-23"
   },
  {
     type: "stage",
     jour: "1 au 5", mois: "mars", annee: "2027",
     titre: "Stage Compétition / Carnaval",
     lieu: "Salle Tempogym, Jette",
-    horaire: "17h30 - 20h00"
+    horaire: "17h30 - 20h00",
+    date_fin: "2027-03-05"
   },
  {
     type: "stage",
     jour: "26 au 30", mois: "Avril", annee: "2027",
     titre: "Stage Compétition / Printemps",
     lieu: "Salle Tempogym, Jette",
-    horaire: "17h30 - 20h00"
+    horaire: "17h30 - 20h00",
+    date_fin: "2027-04-30"
   },
  {
     type: "permanences",
     jour: "5", mois: "Septembre", annee: "2026",
     titre: "Permanence du samedi",
     lieu: "Cafétariat du centre omnisport, Jette",
-    horaire: "11:30 — 14:00"
+    horaire: "11:30 — 14:00",
+    date_fin: "2026-09-05"
   },
   {
     type: "permanences",
     jour: "10", mois: "Octobre", annee: "2026",
     titre: "Permanence du samedi",
     lieu: "Cafétariat du centre omnisport, Jette",
-    horaire: "11:30 — 14:00"
+    horaire: "11:30 — 14:00",
+    date_fin: "2026-10-10"
   },
     {
     type: "permanences",
     jour: "14", mois: "Novembre", annee: "2026",
     titre: "Permanence du samedi",
     lieu: "Cafétariat du centre omnisport, Jette",
-    horaire: "11:30 — 14:00"
+    horaire: "11:30 — 14:00",
+    date_fin: "2026-11-14"
   },
     {
     type: "permanences",
     jour: "12", mois: "Décembre", annee: "2026",
     titre: "Permanence du samedi",
     lieu: "Cafétariat du centre omnisport, Jette",
-    horaire: "11:30 — 14:00"
+    horaire: "11:30 — 14:00",
+    date_fin: "2026-12-12"
   },
     {
     type: "permanences",
     jour: "9", mois: "Janvier", annee: "2027",
     titre: "Permanence du samedi",
     lieu: "Cafétariat du centre omnisport, Jette",
-    horaire: "11:30 — 14:00"
+    horaire: "11:30 — 14:00",
+    date_fin: "2027-01-09"
   },
     {
     type: "permanences",
     jour: "13", mois: "Mars", annee: "2027",
     titre: "Permanence du samedi",
     lieu: "Cafétariat du centre omnisport, Jette",
-    horaire: "11:30 — 14:00"
+    horaire: "11:30 — 14:00",
+    date_fin: "2027-03-13"
   },
     {
     type: "permanences",
     jour: "22", mois: "Mai", annee: "2027",
     titre: "Permanence du samedi",
     lieu: "Cafétariat du centre omnisport, Jette",
-    horaire: "11:30 — 14:00"
+    horaire: "11:30 — 14:00",
+    date_fin: "2027-05-22"
   },
     {
     type: "permanences",
     jour: "26", mois: "Juin", annee: "2027",
     titre: "Permanence du samedi",
     lieu: "Cafétariat du centre omnisport, Jette",
-    horaire: "11:30 — 14:00"
+    horaire: "11:30 — 14:00",
+    date_fin: "2027-06-26"
   },
 
   // ➕ Ajoute un événement ici (copie le bloc et remplis) :
@@ -1180,6 +1196,21 @@ var EVENEMENTS = [
   });
 })();
 
+
+// Mise à jour automatique des calendriers à la date locale de Bruxelles.
+// Une activité reste affichée jusqu'à sa date_fin incluse (AAAA-MM-JJ).
+function tgAujourdHuiBelgique() {
+  const morceaux = new Intl.DateTimeFormat('fr-BE', {
+    timeZone: 'Europe/Brussels', year: 'numeric', month: '2-digit', day: '2-digit'
+  }).formatToParts(new Date());
+  function lire(type) { return morceaux.find(function(p) {return p.type === type;}).value; }
+  return lire('year') + '-' + lire('month') + '-' + lire('day');
+}
+function tgEstAVenir(item, aujourdHui) {
+  // Si une date de fin manque, on ne masque pas l'annonce par erreur.
+  if (!item || !/^\d{4}-\d{2}-\d{2}$/.test(item.date_fin || '')) return true;
+  return item.date_fin >= (aujourdHui || tgAujourdHuiBelgique());
+}
 
 // ════════════════════════════════════════════════════════════════════
 // 🔐 ZONE ENTRAÎNEURS — contenu
@@ -4395,7 +4426,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="stages-calendar-title reveal">
     <p class="section-eyebrow" style="color:var(--tg-gold);margin-bottom:8px" id="stages-cal-saison"></p>
     <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:28px;color:#fff;text-transform:uppercase;letter-spacing:.04em;" id="stages-cal-titre"></h3>
-    <p style="font-size:13px;color:rgba(255,255,255,.5);margin-top:6px;">Horaire unique pour tous les stages : <strong style="color:var(--tg-gold)" id="stages-horaire-unique"></strong></p>
+    <p style="font-size:13px;color:rgba(255,255,255,.5);margin-top:6px;">Horaire habituel des stages : <strong style="color:var(--tg-gold)" id="stages-horaire-unique"></strong></p>
   </div>
 
   <div class="stages-cards-row reveal" id="stages-cards-row"></div>
@@ -4438,19 +4469,29 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('stages-cal-titre').textContent = S.calendrier_titre;
   document.getElementById('stages-horaire-unique').textContent = S.horaire_unique;
 
-  // Cartes saisons
+  // Cartes saisons : masquer automatiquement les stages terminés.
   var row = document.getElementById('stages-cards-row');
-  S.saisons.forEach(function(s) {
-    var h = s.horaire || S.horaire_unique;
-    var card = document.createElement('div');
-    card.className = 'stage-info-card';
-    card.innerHTML =
-      '<div class="stage-season-label">' + s.label + '</div>' +
-      '<div class="stage-season-year">' + s.annee + '</div>' +
-      '<div class="stage-season-dates">' + s.dates + '</div>' +
-      '<div class="stage-season-time">' + clockSVG + ' ' + h + '</div>';
-    row.appendChild(card);
-  });
+  window.tgAfficherStages = function(aujourdhui) {
+    const visibles = S.saisons.filter(function(stage) { return tgEstAVenir(stage, aujourdhui); });
+    row.replaceChildren();
+    visibles.forEach(function(stage) {
+      var card = document.createElement('div');
+      card.className = 'stage-info-card';
+      card.innerHTML =
+        '<div class="stage-season-label">' + stage.label + '</div>' +
+        '<div class="stage-season-year">' + stage.annee + '</div>' +
+        '<div class="stage-season-dates">' + stage.dates + '</div>' +
+        '<div class="stage-season-time">' + clockSVG + ' ' + (stage.horaire || S.horaire_unique) + '</div>';
+      row.appendChild(card);
+    });
+    if (!visibles.length) {
+      var p = document.createElement('p');
+      p.className = 'stages-intro';
+      p.textContent = 'Aucun stage à venir pour le moment.';
+      row.appendChild(p);
+    }
+  };
+  window.tgAfficherStages(tgAujourdHuiBelgique());
 
   // Tarif
   document.getElementById('stages-tarif-label').textContent = S.tarif_label;
@@ -6228,9 +6269,10 @@ function renderEvenements(filter = 'all', showAll = false) {
   const moreText = document.getElementById('evMoreText');
   const voirPlusBtn = document.getElementById('evVoirPlus');
   if (!grid) return;
-  const filtered = filter === 'all' ? EVENEMENTS : EVENEMENTS.filter(e => e.type === filter);
+  const evenementsActuels = EVENEMENTS.filter(e => tgEstAVenir(e, tgAujourdHuiBelgique()));
+  const filtered = filter === 'all' ? evenementsActuels : evenementsActuels.filter(e => e.type === filter);
   if (filtered.length === 0) {
-    grid.innerHTML = '<p class="ev-empty">Aucun événement dans cette catégorie</p>';
+    grid.innerHTML = '<p class="ev-empty">Aucun événement à venir dans cette catégorie</p>';
     if (moreText) moreText.style.display = 'none';
     if (voirPlusBtn) voirPlusBtn.style.display = 'none';
     return;
@@ -6266,6 +6308,21 @@ function renderEvenements(filter = 'all', showAll = false) {
 }
 
 renderEvenements();
+
+// Si la page reste ouverte au changement de jour, actualiser les deux calendriers.
+var tgDateDernierRendu = tgAujourdHuiBelgique();
+function tgRafraichirSiNouveauJour() {
+  const maintenant = tgAujourdHuiBelgique();
+  if (maintenant === tgDateDernierRendu) return;
+  tgDateDernierRendu = maintenant;
+  const actif = document.querySelector('#evFilters .ev-filter-btn.active');
+  renderEvenements(actif ? actif.dataset.filter : 'all');
+  if (typeof window.tgAfficherStages === 'function') window.tgAfficherStages(maintenant);
+}
+setInterval(tgRafraichirSiNouveauJour, 60000);
+document.addEventListener('visibilitychange', function() {
+  if (!document.hidden) tgRafraichirSiNouveauJour();
+});
 
 const evFilters = document.getElementById('evFilters');
 if (evFilters) {
